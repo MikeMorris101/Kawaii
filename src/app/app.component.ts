@@ -20,31 +20,31 @@ export class AppComponent {
   constructor(private matIconRegistry:MatIconRegistry, domsanitizer:DomSanitizer){
     matIconRegistry.addSvgIcon(
       'cat',
-      domsanitizer.bypassSecurityTrustResourceUrl('../assets/svg/143-cat.svg')
+      domsanitizer.bypassSecurityTrustResourceUrl('assets/svg/143-cat.svg')
     );
     matIconRegistry.addSvgIcon(
       'dog',
-      domsanitizer.bypassSecurityTrustResourceUrl('../assets/svg/165-dog.svg')
+      domsanitizer.bypassSecurityTrustResourceUrl('assets/svg/165-dog.svg')
     );
     matIconRegistry.addSvgIcon(
       'fox',
-      domsanitizer.bypassSecurityTrustResourceUrl('../assets/svg/054-fox.svg')
+      domsanitizer.bypassSecurityTrustResourceUrl('assets/svg/054-fox.svg')
     );
     matIconRegistry.addSvgIcon(
       'shibaInu',
-      domsanitizer.bypassSecurityTrustResourceUrl('../assets/svg/019-dog-1.svg')
+      domsanitizer.bypassSecurityTrustResourceUrl('assets/svg/019-dog-1.svg')
     );
     matIconRegistry.addSvgIcon(
       'bunny',
-      domsanitizer.bypassSecurityTrustResourceUrl('../assets/svg/076-rabbit.svg')
+      domsanitizer.bypassSecurityTrustResourceUrl('assets/svg/076-rabbit.svg')
     );
     matIconRegistry.addSvgIcon(
       'llama',
-      domsanitizer.bypassSecurityTrustResourceUrl('../assets/svg/llama.svg')
+      domsanitizer.bypassSecurityTrustResourceUrl('assets/svg/llama.svg')
     );
     matIconRegistry.addSvgIcon(
       'alpaca',
-      domsanitizer.bypassSecurityTrustResourceUrl('../assets/svg/alpaca.svg')
+      domsanitizer.bypassSecurityTrustResourceUrl('assets/svg/alpaca.svg')
     );
   }
 }
