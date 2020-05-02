@@ -1,0 +1,141 @@
+html{
+ 
+ margin: 0;
+}
+body{
+    margin-left: 11px;
+    height: 100%;
+ padding: 0;
+}
+mat-toolbar a{
+    margin:1.4rem;
+}
+
+.header{
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    z-index:1000;
+}
+mat-toolbar{
+    height:fit-content;
+}
+
+mat-toolbar .mat-icon {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    vertical-align:middle;
+  }
+
+  .title{
+      font-size: 5rem;
+      margin-left: -18rem;;
+  }
+
+  mat-sidenav{
+      width:200px;
+      height: fit-content;
+      background-color: white;
+  }
+
+  mat-sidenav-container{
+      height:100%;
+      width: fit-content;
+      float: left;
+      position: sticky;
+  }
+ 
+  .buttonToggle{
+      margin-right: 1rem;
+      -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+      box-shadow: none;
+  }
+  
+  .buttonToggle .mat-icon{
+      margin-top: 1rem;
+      margin-left: -2.5rem;
+      margin-right:0rem;
+  }
+
+  mat-sidenav{
+      height: auto !important;
+  }
+
+ mat-list-item .mat-icon{
+    margin-top: 1.4rem;
+    margin-left: -1rem;
+    margin-right:1rem;
+}
+
+mat-list-item a{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    color: orchid;
+}
+
+
+.bg{
+    background-image: url(../assets/backgrounds/hellokitty.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height:86.5%
+  }
+
+  .sidebar{
+      position: fixed;
+      overflow: hidden;
+      margin-top: 5.5rem;
+  }
+
+  .maincontent{
+      margin-top:5.5rem;
+      display: flex;
+      flex-direction: column;
+      -webkit-transition: width 0.4s ease;  
+      -moz-transition: width 0.4s ease;  
+      -o-transition: width 0.4s ease;  
+      -ms-transition: width 0.4s ease;  
+      transition: width 0.4s ease;
+      width:85.2%;
+      float: right;
+  }
+
+  .maincontentExpanded{
+    margin-top:5.5rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-transition: width 0.4s ease;  
+    -moz-transition: width 0.4s ease;  
+    -o-transition: width 0.4s ease;  
+    -ms-transition: width 0.4s ease;  
+    transition: width 0.4s ease;
+    width:100%;
+    float: right;
+}
+
+.sidebarButton{
+      transform: rotate(0deg);
+      -webkit-transition: all 0.4s ease;  
+      -moz-transition: all 0.4s ease;  
+      -o-transition: all 0.4s ease;  
+      -ms-transition: all 0.4s ease;  
+      transition: all 0.4s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.sideBarButtonRotated{
+      transform: rotate(-180deg);
+      -webkit-transition: all 0.4s ease;  
+      -moz-transition: all 0.4s ease;  
+      -o-transition: all 0.4s ease;  
+      -ms-transition: all 0.4s ease;  
+      transition: all 0.4s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+

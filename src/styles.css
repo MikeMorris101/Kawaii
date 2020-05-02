@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 99%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.centrecard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.5rem;
+    height: 100%;
+  }
+
+  .textcentre{
+      text-align: center;
+      margin: 1rem;
+  }
+
+  .cardcontent{
+      max-width:25rem;
+      text-align: center;
+      padding-left: 1rem;
+  }
+
+  .cardaction{
+      color: hotpink;
+  }
+
+  .cardfooter{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+  }
+
+  .centre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+  }
+
+  .divcard{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 3rem;
+    padding-top: 0rem;
+    width: 35rem;
+    float: left;
+  }
+
+  .divcardbutton{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+    bottom: 0;
+  }
+
+  .maincontentExpanded .divcardbutton{
+    margin-left: -1rem;
+  }
+
+  .virtualcontainer{
+    height:33.5rem;
+    display: block;
+    margin-left: 15rem;
+    margin-right: auto;
+}
+
+.maincontentExpanded .virtualcontainer{
+    height:33.5rem;
+    display: block;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightpink;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hotpink;
+}
+
+.noClick { pointer-events: none; }
+
