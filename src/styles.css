@@ -75,17 +75,20 @@ body { width: 100%;
 
 
 @media (max-width: 1080px) {
+  html{
+    height: 100% !important;
+  }
   body{
-    height: 100%;
-    min-height:732px;
+    min-height: 100% !important;
+    overflow-x: hidden !important; 
   }
 .virtualcontainer{
   margin-left: 0rem;
-  height: 33.5rem;
+  height: 41.2rem !important;
 }
 .maincontentExpanded .virtualcontainer{
   margin-left: 0rem;
-  height: 33.5rem;
+  height: 41.2rem !important;
 }
 .mat-menu-content:not(:empty){
   background-color:lavenderblush
@@ -96,6 +99,7 @@ body { width: 100%;
 .divcard{
   padding: 0rem;
   margin-left:-1rem;
+  margin-bottom: 1rem;
 }
 }
 .maincontentExpanded .virtualcontainer{
