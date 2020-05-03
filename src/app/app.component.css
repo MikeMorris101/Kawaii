@@ -102,8 +102,9 @@ mat-list-item a{
   }
 
   .sidebar{
-      position: fixed;
+      position: relative;
       overflow: hidden;
+      height: 86.5%;
   }
 
   .maincontent{

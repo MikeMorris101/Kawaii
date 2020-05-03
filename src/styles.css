@@ -4,6 +4,7 @@ html, body { height: 100%; width:100% }
 body { width: 100%;
   margin: 0px;
   overflow-x: hidden;
+  height: 86.5%;
    font-family: Roboto, "Helvetica Neue", sans-serif; }
 .centrecard{
     display: flex;
@@ -66,7 +67,7 @@ body { width: 100%;
   }
 
   .virtualcontainer{
-    height:33.5rem;
+    height:31.2rem;
     display: block;
     margin-left: 15rem;
     margin-right: auto;
@@ -92,7 +93,7 @@ body { width: 100%;
 }
 }
 .maincontentExpanded .virtualcontainer{
-    height:33.5rem;
+    height:31.2rem;
     display: block;
     margin-left: 1rem;
     margin-right: auto;
