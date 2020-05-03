@@ -77,9 +77,11 @@ body { width: 100%;
 @media (max-width: 1080px) {
 .virtualcontainer{
   margin-left: 0rem;
+  height: 33.5rem;
 }
 .maincontentExpanded .virtualcontainer{
   margin-left: 0rem;
+  height: 33.5rem;
 }
 .mat-menu-content:not(:empty){
   background-color:lavenderblush
