@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 99%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; width:100% }
+body { width: 100%;
+  overflow-x: hidden;
+   font-family: Roboto, "Helvetica Neue", sans-serif; }
 .centrecard{
     display: flex;
     justify-content: center;
@@ -44,7 +46,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     height: 100%;
     padding: 3rem;
     padding-top: 0rem;
-    width: 35rem;
+    width:100%;
+    max-width: 33.5rem;
     float: left;
   }
 
@@ -82,12 +85,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-menu-content button{
   color: hotpink;
 }
+.divcard{
+  padding: 0rem;
+  margin-left:-1rem;
+}
 }
 .maincontentExpanded .virtualcontainer{
     height:33.5rem;
     display: block;
     margin-left: 1rem;
     margin-right: auto;
+    width:100%;
+    max-width: 100%;
 }
 
 /* width */
