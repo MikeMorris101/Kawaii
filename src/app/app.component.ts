@@ -10,7 +10,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class AppComponent {
   title = 'Kawaii';
   opened="true";
-  expanded:boolean=true;
+  expanded:boolean=false;
   onSidebarToggle(sideNav){
     sideNav.toggle();
     this.expanded=!this.expanded;

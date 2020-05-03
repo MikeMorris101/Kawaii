@@ -1,15 +1,56 @@
 <mat-toolbar color="accent" class="header">
-  <div class="buttonToggle" >
+  <div style="display: flex; float: left;">
+  <div class="buttonToggle mainMenu" >
     <button (click)="onSidebarToggle(sideNav)" 
     disableRipple mat-button [ngClass]="expanded?'sideBarButtonRotated':'sidebarButton'"
     ><mat-icon>play_circle_filled</mat-icon></button>
   </div>
-    <a [routerLink]="['/Home']" routerLinkActive="router-link-active"
-     style="margin-left: -35rem;" mat-icon-button class="title">
-      Kawaii ツ
-</a>
-  <div>
-    <mat-nav-list fxLayout="row">
+  <div class="otherMenu">
+    <mat-menu style="background: lightpink;" #animalMenu="matMenu"class="otherMenu" xPosition="after" yPosition="below">
+      <button  [routerLink]="['/Cats']" routerLinkActive="router-link-active" mat-menu-item >
+        <mat-icon svgIcon="cat"></mat-icon>
+        Cats
+      </button>
+      <button  [routerLink]="['/Dogs']" routerLinkActive="router-link-active" mat-menu-item >
+        <mat-icon svgIcon="dog"></mat-icon>
+        Dogs
+      </button>
+      <button  [routerLink]="['/Foxes']" routerLinkActive="router-link-active" mat-menu-item >
+        <mat-icon svgIcon="fox"></mat-icon>
+        Foxes
+      </button>
+      <button  [routerLink]="['/Shibe']" routerLinkActive="router-link-active" mat-menu-item >
+        <mat-icon svgIcon="shibaInu"></mat-icon>
+        Shiba Inu
+      </button>
+      <button  [routerLink]="['/Bunnies']" routerLinkActive="router-link-active" mat-menu-item >
+        <mat-icon svgIcon="bunny"></mat-icon>
+        Bunnies
+      </button>
+      <button  [routerLink]="['/Llamas']" routerLinkActive="router-link-active" mat-menu-item >
+        <mat-icon svgIcon="llama"></mat-icon>
+        Llamas
+      </button>
+      <button  [routerLink]="['/Alpacas']" routerLinkActive="router-link-active" mat-menu-item >
+        <mat-icon svgIcon="alpaca"></mat-icon>
+        Alpacas
+      </button>
+    </mat-menu>
+    <button mat-flat-button color=accent [matMenuTriggerFor]="animalMenu">
+      <div class="mat-headline menuIcon">
+        <mat-icon>view_headline</mat-icon>
+        </div>
+    </button>
+  </div>
+  <div >
+  <a [routerLink]="['/Home']" routerLinkActive="router-link-active"
+   mat-icon-button class="title">
+   Kawaii ツ
+  </a>
+</div>
+  </div>
+  <div >
+    <mat-nav-list fxLayout="row" class="mainMenu">
       <a [routerLink]="['/Home']" routerLinkActive="router-link-active"  class="mat-display-1" >
       <mat-icon>home</mat-icon>
       Home
@@ -21,11 +62,19 @@
         <mat-icon>phone</mat-icon>
         Contact</a>
   </mat-nav-list>
+  <mat-menu style="background: lightpink;" #appMenu="matMenu"class="otherMenu" xPosition="before" yPosition="below">
+    <button  [routerLink]="['/Home']" routerLinkActive="router-link-active" mat-menu-item >Home</button>
+    <button [routerLink]="['/About']" routerLinkActive="router-link-active" mat-menu-item>About</button>
+    <button [routerLink]="['/Contact']" routerLinkActive="router-link-active" mat-menu-item>Contact</button>
+  </mat-menu>
+  <button class="otherMenu" mat-flat-button color=accent [matMenuTriggerFor]="appMenu">
+    <div class="mat-headline">Menu</div>
+  </button>
   </div>
     
 </mat-toolbar>
 <mat-sidenav-container class="sidebar">
-    <mat-sidenav #sideNav mode="side" align="start" opened>
+    <mat-sidenav #sideNav mode="side" align="start">
       <mat-nav-list>
         <mat-list-item> 
         <a [routerLink]="['/Cats']" routerLinkActive="router-link-active"  class="mat-headline" >

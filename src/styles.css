@@ -68,6 +68,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-right: auto;
 }
 
+
+@media (max-width: 1080px) {
+.virtualcontainer{
+  margin-left: 0rem;
+}
+.maincontentExpanded .virtualcontainer{
+  margin-left: 0rem;
+}
+.mat-menu-content:not(:empty){
+  background-color:lavenderblush
+}
+.mat-menu-content button{
+  color: hotpink;
+}
+}
 .maincontentExpanded .virtualcontainer{
     height:33.5rem;
     display: block;
