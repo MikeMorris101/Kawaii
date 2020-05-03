@@ -75,6 +75,10 @@ body { width: 100%;
 
 
 @media (max-width: 1080px) {
+  body{
+    height: 100%;
+    min-height:732px;
+  }
 .virtualcontainer{
   margin-left: 0rem;
   height: 33.5rem;
